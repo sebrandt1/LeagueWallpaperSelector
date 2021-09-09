@@ -27,6 +27,6 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: published_lwps
-        path: bin\Release\Publish
+        path: bin\Release
     env:
         ACTIONS_ALLOW_UNSECURE_COMMANDS: true
