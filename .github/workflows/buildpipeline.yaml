@@ -28,3 +28,4 @@ jobs:
       with:
         name: published_lwps
         path: bin\Release\Publish
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
