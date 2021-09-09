@@ -13,7 +13,7 @@ namespace LeagueWallpaperSelector
 {
     public class ButtonDrawer
     {
-        //comment to test pipeline
+        //code change pipeline test
         public static void LoadChampionIcons(Grid champGrid, RoutedEventHandler clickMethod)
         {
             champGrid.HorizontalAlignment = HorizontalAlignment.Center;
