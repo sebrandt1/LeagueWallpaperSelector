@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueWallpaperSelector", "LeagueWallpaperSelector.csproj", "{1C5128C4-403D-41A4-974C-2BE931E59C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LWPSTests", "..\LWPSTests\LWPSTests.csproj", "{EA408AF7-43A0-4161-808A-D158035CA29B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C5128C4-403D-41A4-974C-2BE931E59C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5128C4-403D-41A4-974C-2BE931E59C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5128C4-403D-41A4-974C-2BE931E59C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5128C4-403D-41A4-974C-2BE931E59C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA408AF7-43A0-4161-808A-D158035CA29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA408AF7-43A0-4161-808A-D158035CA29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA408AF7-43A0-4161-808A-D158035CA29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA408AF7-43A0-4161-808A-D158035CA29B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13F8ACDC-ACE6-48BF-8BF9-5FDD00CEC6C7}
+	EndGlobalSection
+EndGlobal
