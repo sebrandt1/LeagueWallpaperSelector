@@ -11,4 +11,4 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: build code
-    - run: dotnet build
+      run: dotnet build
