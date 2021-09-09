@@ -1,14 +1,14 @@
 name: first workflow
 on: [push]
 jobs: 
-  build: 
-    name: build job
-    runs-on: windows-latest
+    build: 
+        name: build job
+        runs-on: windows-latest
     
-    steps: 
-    - uses: actions/checkout@v2
-    - uses: actions/setup-dotnet
-      with:
+        steps: 
+        - uses: actions/checkout@v2
+        - uses: actions/setup-dotnet
+        with:
         dotnet-version: 5.0.x
-    - name: build code
-    - run: dotnet build
+        - name: build 
+        run: dotnet build
