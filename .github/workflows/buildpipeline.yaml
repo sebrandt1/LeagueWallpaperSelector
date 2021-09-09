@@ -20,7 +20,7 @@ jobs:
     - name: Restore NuGet Packages
       run: nuget restore LeagueWallpaperSelector.sln
  
-    - name: Build and Publish Web App
+    - name: Build and Publish LWPS
       run: msbuild LeagueWallpaperSelector.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
  
     - name: Upload Artifact
