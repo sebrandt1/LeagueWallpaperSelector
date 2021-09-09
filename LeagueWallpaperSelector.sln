@@ -5,7 +5,14 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueWallpaperSelector", "LeagueWallpaperSelector.csproj", "{1C5128C4-403D-41A4-974C-2BE931E59C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LWPSTests", "..\LWPSTests\LWPSTests.csproj", "{EA408AF7-43A0-4161-808A-D158035CA29B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LWPSTests", "..\LWPSTests\LWPSTests.csproj", "{EA408AF7-43A0-4161-808A-D158035CA29B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{BA700586-4C0B-4144-94B9-25434B73937A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{1BED7180-1BE2-476A-98E8-4B02FF942239}"
+	ProjectSection(SolutionItems) = preProject
+		buildpipeline.yaml = buildpipeline.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BED7180-1BE2-476A-98E8-4B02FF942239} = {BA700586-4C0B-4144-94B9-25434B73937A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {13F8ACDC-ACE6-48BF-8BF9-5FDD00CEC6C7}
