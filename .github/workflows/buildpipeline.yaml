@@ -1,16 +1,29 @@
-name: first workflow
+name: Build LWPS
+ 
 on: [push]
-jobs: 
-  build: 
-    name: build job
+ 
+jobs:
+  build:
+ 
     runs-on: windows-latest
-    
-    steps: 
-    - uses: actions/checkout@v2
-    - uses: NuGet/setup-nuget@v1.0.2
-    - uses: nuget restore LeagueWallpaperSelector.sln
-    run: msbuild LeagueWallpaperSelector.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
-    - name: Upload
+ 
+    steps:
+    - uses: actions/checkout@v1
+      name: Checkout Code
+     
+    - name: Setup MSBuild Path
+      uses: warrenbuckley/Setup-MSBuild@v1
+       
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.2
+     
+    - name: Restore NuGet Packages
+      run: nuget restore LeagueWallpaperSelector.sln
+ 
+    - name: Build and Publish Web App
+      run: msbuild LeagueWallpaperSelector.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+ 
+    - name: Upload Artifact
       uses: actions/upload-artifact@v1.0.0
       with:
         name: published_lwps
