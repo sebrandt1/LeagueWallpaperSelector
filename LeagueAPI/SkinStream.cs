@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LeagueWallpaperSelector.LeagueAPI
 {
+    //comment to test pipeline 
     public class SkinStream
     {
         public string ChampName { get; set; }
