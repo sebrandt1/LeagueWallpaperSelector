@@ -10,7 +10,6 @@ jobs:
     - uses: NuGet/setup-nuget@v1.0.2
     - uses: nuget restore LeagueWallpaperSelector.sln
     run: msbuild LeagueWallpaperSelector.sln /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
-
     - name: Upload
       uses: actions/upload-artifact@v1.0.0
       with:
