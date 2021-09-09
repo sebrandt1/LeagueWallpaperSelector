@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace LeagueWallpaperSelector.LeagueAPI.Models
 {
-    //code change test
+    //code change
     public class Champion
     {
         public string Id { get; set; }
